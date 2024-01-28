@@ -1,0 +1,94 @@
+predict html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction - Prediction Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrollbars caused by large images */
+
+        }
+
+        .background-image {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the entire container */
+            z-index: -1; /* Place it behind the content */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Place content above the background image */
+            text-align: center;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+            padding: 20px; /* Add padding for better readability */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+
+        .main {
+            background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+            padding: 20px; /* Add padding for better readability */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <img src="C:\Users\lenovo\Desktop\meriskill\Project 2 - Diabetes Data\DiabetesPrediction\static\Diabetes  prediction\images\diabetes.jpg" class="background-image">
+
+    <div align="center" class="main">
+        <h1>Please enter the following information:</h1>
+
+        <form action= "result">
+            <table>
+                <tr>
+                    <td align="right">Pregnancies:</td>
+                    <td align="left"><input type="text" name="n1"></td>
+                </tr>
+                <tr>
+                    <td align="right">Glucose:</td>
+                    <td align="left"><input type="text" name="n2"></td>
+                </tr>
+                <tr>
+                    <td align="right">Blood Pressure:</td>
+                    <td align="left"><input type="text" name="n3"></td>
+                </tr>
+                <tr>
+                    <td align="right">Skin Thickness:</td>
+                    <td align="left"><input type="text" name="n4"></td>
+                </tr>
+                <tr>
+                    <td align="right">Insulin:</td>
+                    <td align="left"><input type="text" name="n5"></td>
+                </tr>
+                <tr>
+                    <td align="right">Body Mass Index (BMI):</td>
+                    <td align="left"><input type="text" name="n6"></td>
+                </tr>
+                <tr>
+                    <td align="right">Diabetes Pedigree Function:</td>
+                    <td align="left"><input type="text" name="n7"></td>
+                </tr>
+                <tr>
+                    <td align="right">Age:</td>
+                    <td align="left"><input type="text" name="n8"></td>
+                </tr>
+            </table>
+            <button type="submit">Predict</button>
+        </form>
+        Result : {{result1}}
+    </div>
+
+</body>
+
+</html>

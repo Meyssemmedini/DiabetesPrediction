@@ -1,0 +1,47 @@
+home.html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction - Home</title>
+
+    <style>
+        body {
+            position: relative;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        img {
+            width: 100%; /* Set the image width to 100% */
+            height: auto; /* Maintain aspect ratio */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Diabetes Prediction</h1>
+
+    <img src="C:/Users/lenovo/Desktop/meriskill/Project 2 - Diabetes Data/DiabetesPrediction/static/Diabetes  prediction/images/diabetes prediction.jpg" alt="Front Page Image">
+
+</body>
+</html>
